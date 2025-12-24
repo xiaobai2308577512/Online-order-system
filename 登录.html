@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/登录.css">
+    <title>网上订餐系统登录</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="login-title">网上订餐系统登录</h2>
+        <div class="form-group">
+            <input type="text" id="loginUsername" placeholder="请输入用户名">
+        </div>
+        <div class="form-group">
+            <input type="password" id="loginPassword" placeholder="请输入密码">
+        </div>
+        <p id="loginErrorMsg" style="color: red; text-align: center; display: none;"></p>
+        <div class="role-select">
+            <a href="注册.html" class="role-option">注册</a>
+        </div>
+        <button class="login-btn" onclick="login()">登录</button>
+        <div class="skip-login">
+            <a href="首页.html" class="skip-link">暂不登录/注册，直接进入 ></a>
+        </div>
+    </div>
+    <script src="js/登录.js"></script>
+</body>
+</html>

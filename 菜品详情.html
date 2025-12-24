@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>菜品详情</title>
+    <link rel="stylesheet" href="css/首页.css">
+    <link rel="stylesheet" href="css/菜品详情.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="logo">高飞国际大饭店</li>
+            <li><a href="首页.html">首页</a></li>
+            <li><a href="菜品分类.html">菜品分类</a></li>
+            <li><a href="订单管理.html">订单管理</a></li>
+            <li><a href="支付.html">支付</a></li>
+        </ul>
+        <div class="nav-right" id="loginStatus">
+            <a href="登录.html" class="login-btn">登录</a>
+            <a href="注册.html" class="register-btn">注册</a>
+        </div>
+    </nav>
+
+    <div class="detail-container">
+        <div class="detail-header">
+            <button class="back-btn" onclick="history.back()">返回</button>
+            <h2 id="dishName">菜品名称</h2>
+        </div>
+        
+        <div class="detail-content">
+            <div class="detail-image">
+                <img id="dishImage" src="" alt="菜品图片">
+            </div>
+            
+            <div class="detail-info">
+                <div class="info-item">
+                    <span class="label">分类：</span>
+                    <span id="category"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">价格：</span>
+                    <span id="price"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">口味：</span>
+                    <span id="taste"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">食材：</span>
+                    <span id="ingredients"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/nav.js"></script>
+    <script src="js/菜品详情.js"></script>
+</body>
+</html>

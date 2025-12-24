@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>菜品分类</title>
+    <link rel="stylesheet" href="css/首页.css">
+    <link rel="stylesheet" href="css/菜品分类.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="logo">高飞国际大饭店</li>
+            <li><a href="首页.html">首页</a></li>
+            <li><a href="菜品分类.html">菜品分类</a></li>
+            <li><a href="订单管理.html">订单管理</a></li>
+            <li><a href="支付.html">支付</a></li>   
+        </ul>
+        <div class="nav-right" id="loginStatus">
+            <a href="登录.html" class="login-btn">登录</a>
+            <a href="注册.html" class="register-btn">注册</a>
+        </div>
+    </nav>
+
+    <div class="category-container">
+        <div class="category-section">
+            <h2>管饱主食</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="img/rice.jpg" alt="米饭" class="food-image"
+                         data-name="香喷喷米饭" 
+                         data-category="管饱主食" 
+                         data-price="2" 
+                         data-taste="清香" 
+                         data-ingredients="优质大米">
+                    <p>香喷喷米饭</p>
+                    <span class="price">¥2</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="香喷喷米饭" data-price="2">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/noodles.jpg" alt="面条" class="food-image"
+                         data-name="阳春面" 
+                         data-category="管饱主食" 
+                         data-price="12" 
+                         data-taste="咸香" 
+                         data-ingredients="面条,葱花,酱油">
+                    <p>阳春面</p>
+                    <span class="price">¥12</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="阳春面" data-price="12">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/dumpling.jpg" alt="饺子" class="food-image"
+                         data-name="三鲜水饺" 
+                         data-category="管饱主食" 
+                         data-price="15" 
+                         data-taste="鲜美" 
+                         data-ingredients="猪肉,虾仁,韭菜">
+                    <p>三鲜水饺</p>
+                    <span class="price">¥15</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="三鲜水饺" data-price="15">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/baozi.jpg" alt="包子" class="food-image"
+                         data-name="肉包子" 
+                         data-category="管饱主食" 
+                         data-price="3" 
+                         data-taste="咸香" 
+                         data-ingredients="面粉,猪肉,葱姜">
+                    <p>肉包子</p>
+                    <span class="price">¥3</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="肉包子" data-price="3">加入订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2>精品凉菜</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="img/cucumber.jpg" alt="凉拌黄瓜" class="food-image"
+                         data-name="凉拌黄瓜" 
+                         data-category="精品凉菜" 
+                         data-price="8" 
+                         data-taste="爽口" 
+                         data-ingredients="黄瓜,蒜,醋">
+                    <p>凉拌黄瓜</p>
+                    <span class="price">¥8</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="凉拌黄瓜" data-price="8">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/peanut.jpg" alt="凉拌花生" class="food-image"
+                         data-name="凉拌花生" 
+                         data-category="精品凉菜" 
+                         data-price="10" 
+                         data-taste="香辣" 
+                         data-ingredients="花生,辣椒,香菜">
+                    <p>凉拌花生</p>
+                    <span class="price">¥10</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="凉拌花生" data-price="10">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/seaweed.jpg" alt="海带丝" class="food-image"
+                         data-name="海带丝" 
+                         data-category="精品凉菜" 
+                         data-price="8" 
+                         data-taste="咸鲜" 
+                         data-ingredients="海带,醋,蒜">
+                    <p>海带丝</p>
+                    <span class="price">¥8</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="海带丝" data-price="8">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/tofu.jpg" alt="凉拌豆腐" class="food-image"
+                         data-name="凉拌豆腐" 
+                         data-category="精品凉菜" 
+                         data-price="12" 
+                         data-taste="清淡" 
+                         data-ingredients="豆腐,香菜,酱油">
+                    <p>凉拌豆腐</p>
+                    <span class="price">¥12</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="凉拌豆腐" data-price="12">加入订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2>招牌小炒</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="img/kungpao.jpg" alt="宫保鸡丁" class="food-image"
+                         data-name="宫保鸡丁" 
+                         data-category="招牌小炒" 
+                         data-price="28" 
+                         data-taste="麻辣" 
+                         data-ingredients="鸡肉,花生,干辣椒">
+                    <p>宫保鸡丁</p>
+                    <span class="price">¥28</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="宫保鸡丁" data-price="28">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/mapo.jpg" alt="麻婆豆腐" class="food-image"
+                         data-name="麻婆豆腐" 
+                         data-category="招牌小炒" 
+                         data-price="22" 
+                         data-taste="麻辣" 
+                         data-ingredients="豆腐,肉末,豆瓣酱">
+                    <p>麻婆豆腐</p>
+                    <span class="price">¥22</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="麻婆豆腐" data-price="22">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/fish.jpg" alt="红烧鱼" class="food-image"
+                         data-name="红烧鱼" 
+                         data-category="招牌小炒" 
+                         data-price="38" 
+                         data-taste="鲜美" 
+                         data-ingredients="鲜鱼,葱姜,酱油">
+                    <p>红烧鱼</p>
+                    <span class="price">¥38</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="红烧鱼" data-price="38">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/eggplant.jpg" alt="鱼香茄子" class="food-image"
+                         data-name="鱼香茄子" 
+                         data-category="招牌小炒" 
+                         data-price="18" 
+                         data-taste="咸鲜" 
+                         data-ingredients="茄子,肉末,蒜苗">
+                    <p>鱼香茄子</p>
+                    <span class="price">¥18</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="鱼香茄子" data-price="18">加入订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2>创意西餐</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <img src="img/burger.jpg" alt="美味汉堡" class="food-image"
+                         data-name="美味汉堡" 
+                         data-category="创意西餐" 
+                         data-price="25" 
+                         data-taste="美式" 
+                         data-ingredients="牛肉饼,生菜,番茄">
+                    <p>美味汉堡</p>
+                    <span class="price">¥25</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="美味汉堡" data-price="25">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/bbq.jpg" alt="烤肉拼盘" class="food-image"
+                         data-name="烤肉拼盘" 
+                         data-category="创意西餐" 
+                         data-price="68" 
+                         data-taste="烧烤" 
+                         data-ingredients="牛肉,羊肉,鸡翅">
+                    <p>烤肉拼盘</p>
+                    <span class="price">¥68</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="烤肉拼盘" data-price="68">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/fries.jpg" alt="美味薯条" class="food-image"
+                         data-name="美味薯条" 
+                         data-category="创意西餐" 
+                         data-price="12" 
+                         data-taste="咸香" 
+                         data-ingredients="土豆,油,盐">
+                    <p>美味薯条</p>
+                    <span class="price">¥12</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="美味薯条" data-price="12">加入订单</button>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img src="img/salad.jpg" alt="蔬菜沙拉" class="food-image"
+                         data-name="蔬菜沙拉" 
+                         data-category="创意西餐" 
+                         data-price="18" 
+                         data-taste="清新" 
+                         data-ingredients="生菜,番茄,黄瓜">
+                    <p>蔬菜沙拉</p>
+                    <span class="price">¥18</span>
+                    <div class="order-controls">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-order" data-name="蔬菜沙拉" data-price="18">加入订单</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/菜品分类.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="css/首页.css">
+    <link rel="stylesheet" href="css/订单.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="logo">高飞国际大饭店</li>
+            <li><a href="首页.html">首页</a></li>
+            <li><a href="菜品分类.html">菜品分类</a></li>
+            <li><a href="订单管理.html">订单管理</a></li>
+            <li><a href="支付.html">支付</a></li>
+        </ul>
+        <div class="nav-right" id="loginStatus">
+            <a href="登录.html" class="login-btn">登录</a>
+            <a href="注册会员.html" class="register-btn">注册</a>
+        </div>
+    </nav>
+
+    <div class="order-container">
+        <h2>我的订单</h2>
+        <div class="order-header">
+            <span class="item-name">菜品名称</span>
+            <span class="item-quantity">数量</span>
+            <span class="item-price">金额</span>
+            <span class="item-action">操作</span>
+        </div>
+        <div class="order-list" id="orderList">
+    
+        </div>
+        <div class="order-total">
+            <span>总计：¥<span id="totalAmount">0</span></span>
+        </div>
+        <div class="order-actions">
+            <button id="goPayment" class="pay-btn">去支付</button>
+        </div>
+    </div>
+
+    <script src="js/订单管理.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html> 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/注册.css">
+    <title>登录页面</title>
+
+</head>
+<body>
+    <div class="login-container">
+        <img src="img/touxiang.jpg" alt="头像" class="avatar">
+        <div class="login-text">欢迎注册</div>
+        <input type="text" id="username" placeholder="请输入用户名">
+        <input type="password" id="password" placeholder="请输入密码">
+        <input type="password" id="confirmPassword" placeholder="确认密码">
+        <p id="errorMsg" style="color: red; text-align: center; display: none;"></p>
+        <button class="login-btn" onclick="validateForm()">注册账号</button>
+        <div class="register-link">
+            <a href="登录.html">已有账号？点此去登录</a>
+        </div>
+    </div>
+    <script src="js/注册.js"></script>
+</body>
+</html> 
